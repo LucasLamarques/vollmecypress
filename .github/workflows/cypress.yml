@@ -5,6 +5,8 @@ on:
     branches:
       - testes
 
+  workflow_dispatch:
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
