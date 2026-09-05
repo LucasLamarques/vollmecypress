@@ -13,13 +13,8 @@ describe('Teste de logout no frontend', () => {
     it('Deve desautenticar o usuário após o logout', () => {
         cy.login(Cypress.env('email'), Cypress.env('senha'));
         cy.visit('/dashboard');
-
         cy.get('.sc-fLcnxK').click();
-
-        cy.window()
-            .its('localStorage.authToken')
-            .should('not.exist');
-
+        cy.window().its('localStorage.authToken').should('not.exist');
         cy.url().should('include', '/');
     });
 });
