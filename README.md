@@ -483,7 +483,7 @@ npm start
 Em outro terminal, inicie o frontend:
 
 ```bash
-cd vollmecypress/web
+cd web
 npm install
 npm start
 ```
