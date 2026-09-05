@@ -337,12 +337,6 @@ O frontend utiliza principalmente:
 * MobX
 * Recharts
 
-A aplicação é iniciada através do:
-
-```bash
-npm start
-```
-
 O frontend utiliza a porta:
 
 ```text
@@ -471,36 +465,40 @@ npm run test:browser:edge
 
 ## ▶️ Como executar
 
-Clone o projeto:
+Clone o projeto e entre na pasta:
 
 ```bash
 git clone https://github.com/LucasLamarques/vollmecypress.git
-```
-
-Entre no diretório:
-
-```bash
 cd vollmecypress
 ```
 
-Instale as dependências:
+No primeiro terminal, inicie o backend:
 
 ```bash
+cd server
 npm install
+npm start
 ```
 
-Abra o Cypress:
+Em outro terminal, inicie o frontend:
+
+```bash
+cd vollmecypress/web
+npm install
+npm start
+```
+
+Com o backend e o frontend em execução, abra um terceiro terminal na pasta principal e execute o Cypress:
 
 ```bash
 npx cypress open
 ```
 
-Ou execute os testes em modo headless:
+Para executar os testes em modo headless:
 
 ```bash
 npx cypress run
 ```
-
 ---
 
 ## 🔍 Qualidade de código
