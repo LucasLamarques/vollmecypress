@@ -569,8 +569,6 @@ Este projeto demonstra conhecimentos em:
 
 Este projeto foi desenvolvido a partir de uma aplicação proposta pela Alura como parte da formação em QA.
 
-A aplicação foi utilizada como base para a prática de Quality Assurance e Automação de Testes, sendo os cenários e testes automatizados implementados com Cypress, incluindo testes E2E, testes de API, autenticação, validações e integração com CI/CD.
-
 ---
 
 ## 📌 Projeto
