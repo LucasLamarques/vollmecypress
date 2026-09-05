@@ -16,6 +16,8 @@ jobs:
 
     strategy:
       fail-fast: false
+      matrix:
+        container: [1, 2]
 
     steps:
       - name: Checkout
@@ -56,6 +58,8 @@ jobs:
 
           wait-on: 'http://localhost:3000,http://localhost:8080'
           record: true
+          parallel: true
+          group: 'Cypress Tests'
 
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
